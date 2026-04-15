@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — The Hand Print | NE Minneapolis Screen Printing</title>
+  <meta name="description" content="Get in touch with The Hand Print in Northeast Minneapolis. Start a custom screen printing or graphic design project today." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ─────────────────────────────────────── -->
+  <nav>
+    <a href="index.html" class="nav-logo">The Hand <span>Print</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">Who We Are</a>
+      <a href="work.html">Our Work</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page">
+
+    <!-- ── PAGE HERO ──────────────────────────────────────── -->
+    <div class="page-hero">
+      <img
+        class="page-hero-bg"
+        src="images/IMG_1001.jpeg"
+        alt="The screen printing press at The Hand Print studio — ready for the next custom run"
+      />
+      <div class="page-hero-content">
+        <span class="section-label">Let's Talk</span>
+        <h1 class="page-title">Get in <em>Touch</em></h1>
+      </div>
+    </div>
+
+    <!-- ── TICKER ─────────────────────────────────────────── -->
+    <div class="ticker">
+      <div class="ticker-track">
+        <span>Start a Project</span>
+        <span>Request a Quote</span>
+        <span>Ask a Question</span>
+        <span>Commission a Print</span>
+        <span>Order Apparel</span>
+        <span>Say Hello</span>
+        <span>Start a Project</span>
+        <span>Request a Quote</span>
+        <span>Ask a Question</span>
+        <span>Commission a Print</span>
+        <span>Order Apparel</span>
+        <span>Say Hello</span>
+      </div>
+    </div>
+
+    <!-- ── CONTACT SECTION ─────────────────────────────────── -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- LEFT: INFO ────────────────────────────────── -->
+          <div class="contact-info">
+            <span class="section-label">Contact</span>
+            <h2 class="section-title" style="margin-bottom: 32px;">Tell us<br/>what you<br/><em>need.</em></h2>
+            <p>We work with musicians, artists, small businesses, activists, and anyone else who needs something printed with real craft and intention. Drop us a message and we'll get back to you within one business day.</p>
+
+            <div class="contact-detail">
+              <span class="contact-detail-label">Email</span>
+              <p><a href="mailto:hello@thehandprint.com" style="color: var(--white); transition: color 0.2s;" onmouseover="this.style.color='var(--red)'" onmouseout="this.style.color='var(--white)'">hello@thehandprint.com</a></p>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail-label">Location</span>
+              <p>Northeast Minneapolis, MN<br/>Available for pickup, local delivery,<br/>and nationwide shipping.</p>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail-label">Hours</span>
+              <p>Mon – Fri: 10am – 6pm<br/>Sat: 11am – 4pm<br/>Sun: By appointment</p>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail-label">Turnaround</span>
+              <p>Standard: 7–10 business days<br/>Rush available — ask us</p>
+            </div>
+
+            <!-- Shop photo tucked in -->
+            <div style="margin-top: 48px; overflow: hidden; border: 1px solid var(--mid);">
+              <img
+                src="images/IMG_0743.jpeg"
+                alt="Freshly printed posters cooling on the drying rack at The Hand Print — red and white on cream stock"
+                style="width: 100%; display: block; filter: grayscale(10%); transition: filter 0.4s;"
+                onmouseover="this.style.filter='grayscale(0%)'"
+                onmouseout="this.style.filter='grayscale(10%)'"
+              />
+            </div>
+          </div>
+
+          <!-- RIGHT: FORM ────────────────────────────────── -->
+          <div class="contact-form">
+            <span class="section-label">Send a Message</span>
+            <h3 style="font-family: var(--font-display); font-size: 2.2rem; letter-spacing: 0.03em; color: var(--white); margin-bottom: 36px; line-height: 1;">Start your project here.</h3>
+
+            <!-- NOTE: This is a static HTML form. Hook up to Formspree, Netlify Forms,
+                 or your preferred backend by updating the action attribute. -->
+            <form action="#" method="POST" novalidate>
+
+              <div class="form-row-half" style="margin-bottom: 22px;">
+                <div class="form-row" style="margin: 0;">
+                  <label for="first-name">First Name</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first_name"
+                    placeholder="Jane"
+                    autocomplete="given-name"
+                  />
+                </div>
+                <div class="form-row" style="margin: 0;">
+                  <label for="last-name">Last Name</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last_name"
+                    placeholder="Smith"
+                    autocomplete="family-name"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="jane@yourband.com"
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="form-row">
+                <label for="phone">Phone (Optional)</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(612) 555-0000"
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="form-row">
+                <label for="project-type">Project Type</label>
+                <select id="project-type" name="project_type">
+                  <option value="" disabled selected>Select a category…</option>
+                  <option value="poster">Concert / Event Poster</option>
+                  <option value="apparel">Apparel & T-Shirts</option>
+                  <option value="art-print">Limited Edition Art Print</option>
+                  <option value="graphic-design">Graphic Design Only</option>
+                  <option value="merch">Band / Artist Merch</option>
+                  <option value="political">Political / Activism Print</option>
+                  <option value="other">Other / Not Sure Yet</option>
+                </select>
+              </div>
+
+              <div class="form-row-half" style="margin-bottom: 22px;">
+                <div class="form-row" style="margin: 0;">
+                  <label for="quantity">Estimated Quantity</label>
+                  <select id="quantity" name="quantity">
+                    <option value="" disabled selected>How many?</option>
+                    <option value="1-25">1 – 25</option>
+                    <option value="25-50">25 – 50</option>
+                    <option value="50-100">50 – 100</option>
+                    <option value="100-250">100 – 250</option>
+                    <option value="250-500">250 – 500</option>
+                    <option value="500+">500+</option>
+                    <option value="unsure">Not Sure Yet</option>
+                  </select>
+                </div>
+                <div class="form-row" style="margin: 0;">
+                  <label for="colors">Number of Colors</label>
+                  <select id="colors" name="colors">
+                    <option value="" disabled selected>Colors?</option>
+                    <option value="1">1 Color</option>
+                    <option value="2">2 Colors</option>
+                    <option value="3">3 Colors</option>
+                    <option value="4+">4+ Colors</option>
+                    <option value="unsure">Not Sure</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label for="timeline">Timeline / Deadline</label>
+                <input
+                  type="text"
+                  id="timeline"
+                  name="timeline"
+                  placeholder="e.g. Show is April 30th, need posters by the 25th"
+                />
+              </div>
+
+              <div class="form-row">
+                <label for="message">Tell Us About Your Project</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="What are you making? Who's it for? Any reference images, ideas, or vibes you're going for — throw it all in here."
+                ></textarea>
+              </div>
+
+              <div class="form-row">
+                <label style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer; font-family: var(--font-body); font-size: 0.82rem; letter-spacing: 0.03em; text-transform: none; color: var(--offwhite);">
+                  <input
+                    type="checkbox"
+                    name="design_help"
+                    style="width: auto; margin-top: 3px; accent-color: var(--red);"
+                  />
+                  I need help with design — I don't have finished artwork yet.
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-filled" style="width: 100%; font-size: 0.92rem; padding: 18px;">
+                Send My Project Inquiry
+              </button>
+
+              <p style="font-size: 0.8rem; font-weight: 300; color: var(--offwhite); opacity: 0.6; margin-top: 16px; line-height: 1.6;">
+                We respond to all inquiries within 1 business day. No spam, no junk — just a real person talking back to you.
+              </p>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MAP / LOCATION PHOTO ────────────────────────────── -->
+    <div class="map-section">
+      <div class="map-photo">
+        <img
+          src="images/NEmap.png"
+          alt="Screen printing in action at The Hand Print — ink pulled across a screen during a live print run in the NE Minneapolis studio"
+        />
+        <div class="map-overlay">
+          <span class="section-label">Find Us</span>
+          <h2>Northeast<br/>Minneapolis, MN</h2>
+          <p>Located in the heart of NE Mpls.
+        </div>
+      </div>
+    </div>
+
+    <!-- ── FAQ STRIP ───────────────────────────────────────── -->
+    <section style="background: var(--grey); padding: 80px 0;">
+      <div class="container">
+        <span class="section-label">Common Questions</span>
+        <h2 class="section-title" style="margin-bottom: 56px;">Before You<br/><em>Reach Out</em></h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px;">
+
+          <div style="background: var(--black); padding: 40px 36px; border: 1px solid var(--mid);">
+            <h3 style="font-family: var(--font-sub); font-size: 1.05rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); margin-bottom: 12px;">What's your minimum order?</h3>
+            <p style="font-size: 0.92rem; font-weight: 300; color: var(--offwhite); line-height: 1.72;">There isn't one set in stone. We regularly do runs as small as 10–15 pieces for artists and small projects. Just ask — we'll figure it out together.</p>
+          </div>
+
+          <div style="background: var(--black); padding: 40px 36px; border: 1px solid var(--mid);">
+            <h3 style="font-family: var(--font-sub); font-size: 1.05rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); margin-bottom: 12px;">Do you do the design too?</h3>
+            <p style="font-size: 0.92rem; font-weight: 300; color: var(--offwhite); line-height: 1.72;">Yes. We can take your rough idea, reference images, or a full brief and turn it into print-ready artwork. Design is a core part of what we do.</p>
+          </div>
+
+          <div style="background: var(--black); padding: 40px 36px; border: 1px solid var(--mid);">
+            <h3 style="font-family: var(--font-sub); font-size: 1.05rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); margin-bottom: 12px;">What file formats do you need?</h3>
+            <p style="font-size: 0.92rem; font-weight: 300; color: var(--offwhite); line-height: 1.72;">If you have finished artwork, we prefer vector files (AI, EPS, PDF). High-res PNGs or PSDs work too. Not sure? Just send what you have and we'll tell you what we need.</p>
+          </div>
+
+          <div style="background: var(--black); padding: 40px 36px; border: 1px solid var(--mid);">
+            <h3 style="font-family: var(--font-sub); font-size: 1.05rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); margin-bottom: 12px;">Do you ship?</h3>
+            <p style="font-size: 0.92rem; font-weight: 300; color: var(--offwhite); line-height: 1.72;">Yes — we ship nationwide. Local pickup and delivery in the Minneapolis area is also available. Posters are rolled and tubed; apparel is folded and boxed with care.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ──────────────────────────────────────────── -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">The Hand <span>Print</span></a>
+          <p>Boutique screen printing and graphic design in the heart of Northeast Minneapolis. Made by hand. Built to last.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Who We Are</a></li>
+            <li><a href="work.html">Our Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Find Us</h4>
+          <p>Northeast Minneapolis, MN<br/>Open by appointment<br/>and walk-in<br/><br/>hello@thehandprint.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Hand Print. All rights reserved.</p>
+        <p>NE Minneapolis, MN</p>
+      </div>
+    </footer>
+
+  </div><!-- /page -->
+</body>
+</html>
